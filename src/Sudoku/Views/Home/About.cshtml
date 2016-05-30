@@ -1,7 +1,191 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "О судоку";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
+<div class="news-view-block">
+    <div class="news-text">
 
-<p>Use this area to provide additional information.</p>
+
+        <p style="text-align:center">&nbsp;</p>
+        <p>
+            <span style="font-size:26px">
+                <span style="color:#A9A9A9">
+                    <span style="font-family:verdana,geneva,sans-serif">ОБ ИГРЕ</span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <img alt="Судоку" class="imr" src="~/images/sudoku.png" title="(яп. 数独 су:доку)">
+        </p>
+        <br />
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Судоку (sudoku) — это числовой квадрат-головоломка, очень популярный в наше время.
+                        Если перевести с японского языка, то судоку означает: «цифра, стоящая отдельно».
+                        Некоторые называют игру «магическим квадратом».
+                    </span>
+                </span>
+            </span>
+        </p>
+
+
+        <p style="text-align:center">&nbsp;</p>
+        <p style="text-align:center">&nbsp;</p>
+        <p>
+            <span style="font-size:26px">
+                <span style="color:#A9A9A9">
+                    <span style="font-family:verdana,geneva,sans-serif">ОПИСАНИЕ ИГРЫ</span>
+                </span>
+            </span>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Что же такое судоку? 
+                        Объясним в нескольких словах. 
+                        Игровое поле судоку — это квадрат, разделенный еще на 9 равных квадратов. 
+                        В каждом таком квадрате есть 9 клеток, по 3 на одну сторону. 
+                        Получается, что все поле — это 81 клетка.
+                    </span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Выбирая уровень сложности, Вы влияете на начальные условия игры. 
+                        Чем выше сложность, тем меньше клеток заполнено цифрами (от 1 до 9).
+                    </span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Соревнуйтесь с другими игроками в мастерстве и скорости заполнения судоку, 
+                        и займите вершину рейтинга.
+                    </span>
+                </span>
+            </span>
+        </p>
+
+
+        <p style="text-align:center">&nbsp;</p>
+        <p style="text-align:center">&nbsp;</p>
+        <p>
+            <span style="font-size:26px">
+                <span style="color:#A9A9A9">
+                    <span style="font-family:verdana,geneva,sans-serif">ПРАВИЛА СУДОКУ</span>
+                </span>
+            </span>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Во время решения головоломки, нужно руководствоваться только одним правилом судоку. 
+                        Необходимо вписать цифры в пустые клетки от 1 до 9 так, чтобы:
+                    </span>
+                </span>
+            </span>
+        </p>
+
+        <table align="left" border="0" cellpadding="0" cellspacing="0" class="rules" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <th style="text-align: center;">В любой строке</th>
+                    <th colspan="2" style="text-align: center;">В любом столбце</th>
+                    <th colspan="2" style="text-align: center;">В любом квадрате</th>
+                </tr>
+                <td style="width: 30%;">
+                    <p style="text-align:center;">
+                        "Правильно"
+                        <br>
+                        <img alt="Правила судоку. Правильное заполнение строки" class="correct" src="~/images/rules-sudoku/rules-sudoku-correct-line.png" title="Правила судоку. Правильное заполнение строки судоку">
+                        <br>
+                        <br>
+                        "Неправильно"
+                        <br>
+                        <img alt="Правила судоку. Неправильное заполнение строки" class="incorrect" src="~/images/rules-sudoku/rules-sudoku-incorrect-line.png" title="Правила судоку. Неправильное заполнение строки судоку">
+                    </p>
+                </td>
+                <td style="text-align:center">
+                    "Правильно"
+                    <br>
+                    <img alt="Правила судоку. Правильное заполнение столбца" class="correct" src="/images/rules-sudoku/rules-sudoku-correct-column.png" title="Правила судоку. Правильное заполнение столбца судоку">
+                </td>
+                <td style="text-align:center">
+                    "Неправильно"
+                    <br>
+                    <img alt="Правила судоку. Неправильное заполнение стобца" class="incorrect" src="/images/rules-sudoku/rules-sudoku-incorrect-column.png" title="Правила судоку. Неправильное заполнение столбца судоку">
+                </td>
+                <td style="text-align:center">
+                    "Правильно"
+                    <br>
+                    <img alt="Правила судоку. Правильное заполнение квадрата" class="correct" src="/images/rules-sudoku/rules-sudoku-correct-square.png" title="Правила судоку. Правильное заполнение квадрата судоку">
+                </td>
+                <td style="text-align:center">
+                    "Неправильно"
+                    <br>
+                    <img alt="Правила судоку. Неправильное заполнение квадрата" class="incorrect" src="/images/rules-sudoku/rules-sudoku-incorrect-square.png" title="Правила судоку. Неправильное заполнение квадрата судоку">
+                </td>
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        цифры были без повторения, то есть встречались лишь один раз.
+                    </span>
+                </span>
+            </span>
+        </p>
+
+
+        <p style="text-align:center">&nbsp;</p>
+        <p style="text-align:center">&nbsp;</p>
+        <p>
+            <span style="font-size:26px">
+                <span style="color:#A9A9A9">
+                    <span style="font-family:verdana,geneva,sans-serif">ОСОБЕННОСТИ ИГРЫ</span>
+                </span>
+            </span>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        Во время решения судоку, нажав «Сбросить», Вы отмените все сделанные ходы после подтверждения.
+                        Для того чтобы отменить сделанный ход, нажмите крестик возле поставленной Вами цифры.
+                    </span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="font-size:14px">
+                <span style="font-family:verdana,geneva,sans-serif">
+                    <span style="color:#808080">
+                        После успешного завершения судоку, Вы увидите как изменился ваш уровень, 
+                        баллы, а также какое место Вы занимаете среди других соревнующихся игроков.
+                    </span>
+                </span>
+            </span>
+        </p>
+
+
+
+    </div>
+</div>
+
+
