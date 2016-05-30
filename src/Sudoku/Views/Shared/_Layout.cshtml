@@ -7,14 +7,11 @@
 
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />*@
         <link rel="stylesheet" href="~/css/site.css" />
         <link rel="stylesheet" href="~/css/main.css" />@*My*@
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
@@ -22,41 +19,40 @@
 <body>
     <div id="main_wrapper">
 
-        <div class="navbar navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a asp-controller="Home" asp-action="Index">ИГРА</a></li>
-                        <li><a asp-controller="Home" asp-action="Index">РЕЙТИНГ</a></li>
-                        <li><a asp-controller="Home" asp-action="About">О СУДОКУ</a></li>
-                        <li><a asp-controller="Home" asp-action="Contact">КОНТАКТЫ</a></li>
-                    </ul>
-                    @await Html.PartialAsync("_LoginPartial")
-                </div>
-            </div>
-        </div>
+    <header>
+        <div id="top-navigation-new">
+                <ul id="nav-left">
+                    <li><a asp-controller="Home" asp-action="Index">Игра</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Рейтинг</a></li>
+                    <li><a asp-controller="Home" asp-action="About">О судоку</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+                    @*@await Html.PartialAsync("_LoginPartial")*@
+                </ul>
+</div>
+    </header>
+
+
+        
+        <div class="line"></div>
+
 
         <div class="content_wrapper">
                 @RenderBody()
         </div>
 
+
+
+
         <div class="line"></div>
 
+
+
+
         <footer>
-            <div class="foot-f">
-                SUDOKU &copy; 2016
-            </div>
+                Sudoku &copy; 2016
         </footer>
         
+
 
 
     </div>@*main wrapper*@
