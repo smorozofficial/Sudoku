@@ -13,6 +13,13 @@ namespace Sudoku.Controllers
             return View();
         }
 
+        public IActionResult Rating()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

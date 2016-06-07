@@ -20,14 +20,19 @@
 
     <header>
         <div id="top-navigation-new">
-                <ul id="nav-left">
-                    <li><a asp-controller="Home" asp-action="Index">Играть</a></li>
-                    <li><a asp-controller="Home" asp-action="Index">Рейтинг</a></li>
-                    <li><a asp-controller="Home" asp-action="About">Судоку</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
-                    @*@await Html.PartialAsync("_LoginPartial")*@
-                </ul>
-</div>
+            <ul class="left">
+                
+            <li><a asp-controller="Home" asp-action="Index">Играть</a></li>
+            <li><a asp-controller="Home" asp-action="Rating">Рейтинг</a></li>
+            <li><a asp-controller="Home" asp-action="About">Судоку</a></li>
+            <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+            </ul>
+            <ul class="right">
+                <li><a asp-controller="Account" asp-action="Register">Регистрация</a></li>
+                <li><a asp-controller="Account" asp-action="Login">Вход</a></li>
+                @*@await Html.PartialAsync("_LoginPartial")*@
+            </ul>
+        </div>
     </header>
 
 
@@ -38,11 +43,7 @@
         <div class="content_wrapper">
                 @RenderBody()
         </div>
-
-
-
-
-        <div class="line"></div>
+    <div class="line"></div>
 
 
 
