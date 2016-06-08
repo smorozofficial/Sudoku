@@ -46,7 +46,17 @@ header {
     margin-top: 20px;
 }
 
-
+input[type="password"], input[type="text"], input[type="email"], textarea{
+	width:265px;
+	height:34px;
+	font-size: 14px;
+	padding-left:15px;
+	padding-right:15px;
+	border: 1px solid #cbcbcb;
+	box-shadow: 1px 1px 0 #FFFFFF;
+	border-radius: 2px 2px 2px 2px;
+	margin-bottom:20px;
+}
 
 
 #top-navigation-new {
@@ -235,6 +245,47 @@ table .center{
     padding: 5px;
     line-height: 100%;
     background-color: white;
+}
+
+
+input[type="password"], input[type="text"], input[type="email"], textarea{
+	width:290px;
+	height:34px;
+	font-size: 14px;
+	padding-left:15px;
+	padding-right:15px;
+	border: 1px solid #cbcbcb;
+	box-shadow: 1px 1px 0 #FFFFFF;
+	border-radius: 2px 2px 2px 2px;
+	margin-bottom:20px;
+}
+
+input[type="submit"] {
+     background-color: white; 
+     border: 1px solid #cbcbcb; 
+     border-radius: 0 0 0 0; 
+     color: black; 
+     cursor: pointer; 
+     margin-bottom: 0; 
+     margin-top: 50px; 
+     width: 290px; 
+     height: 34px; 
+     padding-left: 15px; 
+     padding-right: 15px; 
+}
+
+.login-form {
+    font-family:OpenSans;
+	padding:30px 30px;
+    margin: 0 auto;
+	width:290px;
+	background-color:#f9f9f9;
+	text-align:left;
+}
+
+.login-form-footer a{
+    float:right;
+    color:#cbcbcb;
 }
 
 footer {
