@@ -288,6 +288,20 @@ input[type="submit"] {
     color:#cbcbcb;
 }
 
+.login-form input[name="captcha"]{
+	width:100px;
+	float:right;
+
+}
+
+.login-form img{
+	float:left;
+}
+
+.mod-form-capcha{
+    height: 34px;
+}
+
 footer {
 	margin-top: 20px;
 	font-size:14px;
