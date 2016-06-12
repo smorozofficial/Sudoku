@@ -2,7 +2,7 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <ShowAllFiles>true</ShowAllFiles>
+    <ShowAllFiles>false</ShowAllFiles>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_LayoutPageFile>~/Views/Home/Index.cshtml</WebStackScaffolding_LayoutPageFile>
   </PropertyGroup>

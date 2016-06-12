@@ -288,7 +288,7 @@ input[type="submit"] {
     color:#cbcbcb;
 }
 
-.login-form input[name="captcha"]{
+.login-form input[name="Captcha"]{
 	width:100px;
 	float:right;
 

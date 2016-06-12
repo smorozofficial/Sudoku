@@ -2,25 +2,26 @@
 @{
     ViewData["Title"] = "Регистрация";
 }
+<form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+    <div class="login-form">
+        <input type="text" name="Login" size="20" maxlength="12" placeholder="Логин" pattern="^[a-zA-Z0-9]+$" required="required" autofocus>
 
-<div class="login-form">
-    <input type="text" name="username" size="20" maxlength="12" placeholder="Логин" pattern="^[a-zA-Z0-9]+$" required="required">
-    <br />
+        <input type="email" name="Email" size="20" maxlength="50" placeholder="e-mail" required="required">
 
-        <input type="email" name="email" size="20" maxlength="50" placeholder="e-mail" required="required">
-        <br />
-        <input type="password" name="password" size="20" placeholder="Пароль">
-    <input type="password" name="password_confirm" size="20" placeholder="Повторить пароль" onfocus="checkPassword(document.getElementById('p1'), this);" oninput="checkPassword(document.getElementById('p1'), this);">
+        <input type="password" name="Password" size="20" placeholder="Пароль" required>
 
-    <div class="mod-form-capcha">
-        <img src="~/images/bg.png" width="150" height="38" alt="Captcha" class="captcha">
-        <input name="captcha" type="text" placeholder="Капча">
-    </div>
+        <input type="password" name="ConfirmPassword" size="20" placeholder="Повторить пароль" required onfocus="checkPassword(document.getElementById('p1'), this);" oninput="checkPassword(document.getElementById('p1'), this);">
+
+        <div class="mod-form-capcha">
+            <img src="~/images/bg.png" width="150" height="38" alt="Captcha" class="captcha">
+            <input name="Captcha" type="text" placeholder="Капча" required>
+        </div>
 
 
         <input type="submit" name="submit" value="ГОТОВО">
 
     </div>
-    @section Scripts {
-        @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
-    }
+</form>
+    @*@section Scripts {
+            @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+        }*@
