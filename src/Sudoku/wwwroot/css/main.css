@@ -274,6 +274,30 @@ input[type="submit"] {
      padding-right: 15px; 
 }
 
+#logoff{
+    background-color: transparent;
+    border: none;
+    color:none;
+    margin-top: 0px;
+    
+    display: block; 
+	width:100px;
+	float:right;
+	font-size:1.2em;
+	text-align:center;
+	padding-top:0;
+	position: relative;
+
+    font-size:14px;
+    height: 18px;
+	position:relative;
+    font-family:OpenSans;	
+    color: #777c7f;
+    line-height: 130%;
+    text-transform: uppercase;
+    /*margin-top: 20px;*/
+}
+
 .login-form {
     font-family:OpenSans;
 	padding:30px 30px;

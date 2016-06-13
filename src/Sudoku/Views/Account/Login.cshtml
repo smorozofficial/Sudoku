@@ -8,20 +8,22 @@
     ViewData["Title"] = "Вход";
 }
 
-<div class="login-form">
-    <input type="email" name="email" size="20" maxlength="50" placeholder="e-mail" required="required" autofocus>
+<form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+    <div class="login-form">
+        <input type="text" name="Login" size="20" maxlength="50" placeholder="Логин" required autofocus>
 
-    <input type="password" name="password" size="20" placeholder="Пароль">
-    
-    <div class="login-form-footer">
-        <input type="checkbox" name="remember">Запомнить
-        <a asp-controller="Account" asp-action="ForgotPassword">Забыли пароль?</a>
+        <input type="password" name="Password" size="20" placeholder="Пароль" required>
+
+        <div class="login-form-footer">
+            <input type="checkbox" name="RememberMe">Запомнить
+            <a asp-controller="Account" asp-action="ForgotPassword">Забыли пароль?</a>
+        </div>
+
+        <input type="submit" name="submit" value="ВОЙТИ">
     </div>
-
-    <input type="submit" name="submit" value="ВОЙТИ">
-</div>
+</form>
 
 
-@*@section Scripts {
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
-}*@
+    @*@section Scripts {
+            @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+        }*@
